@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text } from 'react-native';
+import { ButtonProps, StyleSheet, Text } from 'react-native';
 import Touchable from 'react-native-platform-touchable';
 
 import { themes } from '../../constants/colors';
 import sharedStyles from '../../views/Styles';
 import ActivityIndicator from '../ActivityIndicator';
 
-interface IButtonProps {
+interface IButtonProps extends ButtonProps {
 	title: string;
 	type: string;
 	onPress(): void;
