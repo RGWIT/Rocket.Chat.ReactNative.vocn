@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="primary_dark">#660B0B0B</color>
-	<item name="splashBackground" type="color">#1D74F5</item>
-	<item name="notification_text" type="color">#1D74F5</item>
+	<color name="primary_dark">#38b4d6</color>
+	<item name="splashBackground" type="color">#38b4d6</item>
+	<item name="notification_text" type="color">#38b4d6</item>
 </resources>

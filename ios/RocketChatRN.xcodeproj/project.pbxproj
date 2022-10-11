@@ -10,10 +10,10 @@
 		0C6E2DE448364EA896869ADF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C79D9BD0742CE936B6982 /* libc++.tbd */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		18F7B4FC28EF747800EF0D20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18F7B4FB28EF747800EF0D20 /* GoogleService-Info.plist */; };
-		18F7B4FD28EF747800EF0D20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18F7B4FB28EF747800EF0D20 /* GoogleService-Info.plist */; };
-		18F7B4FE28EF747800EF0D20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18F7B4FB28EF747800EF0D20 /* GoogleService-Info.plist */; };
-		18F7B4FF28EF747800EF0D20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18F7B4FB28EF747800EF0D20 /* GoogleService-Info.plist */; };
+		1876C54728F562E800ADC36B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1876C54628F562E800ADC36B /* GoogleService-Info.plist */; };
+		1876C54828F562E800ADC36B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1876C54628F562E800ADC36B /* GoogleService-Info.plist */; };
+		1876C54928F562E800ADC36B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1876C54628F562E800ADC36B /* GoogleService-Info.plist */; };
+		1876C54A28F562E800ADC36B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1876C54628F562E800ADC36B /* GoogleService-Info.plist */; };
 		1E01C81C2511208400FEF824 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C81B2511208400FEF824 /* URL+Extensions.swift */; };
 		1E01C8212511301400FEF824 /* PushResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8202511301400FEF824 /* PushResponse.swift */; };
 		1E01C8252511303100FEF824 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E01C8242511303100FEF824 /* Notification.swift */; };
@@ -220,7 +220,7 @@
 		183E673728F0073E0026B6E4 /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = "Pods/OpenSSL-Universal/Frameworks/OpenSSL.xcframework"; sourceTree = "<group>"; };
 		183E673F28F00AF10026B6E4 /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = Pods/JitsiMeetSDK/Frameworks/WebRTC.xcframework; sourceTree = "<group>"; };
 		183E674528F00F450026B6E4 /* hermes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = hermes.xcframework; path = "Pods/hermes-engine/destroot/Library/Frameworks/universal/hermes.xcframework"; sourceTree = "<group>"; };
-		18F7B4FB28EF747800EF0D20 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1876C54628F562E800ADC36B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		194D9A8897F4A486C2C6F89A /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-NotificationService/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		1E01C81B2511208400FEF824 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		1E01C8202511301400FEF824 /* PushResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushResponse.swift; sourceTree = "<group>"; };
@@ -267,14 +267,14 @@
 		1EFEB5972493B6640072EDC0 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		1EFEB5992493B6640072EDC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EFEB5A12493B67D0072EDC0 /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
-		254D36979DFB5715FCAB46F7 /* Pods-defaults-ShareRocketChatRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ShareRocketChatRN.debug.xcconfig"; path = "Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN.debug.xcconfig"; sourceTree = "<group>"; };
 		391C4F7AA7023CD41EEBD106 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-Rocket.Chat/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		3B25203B92671649A4D40DF1 /* libPods-defaults-RocketChatRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-RocketChatRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D5C142B655F8EFD006792C /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-defaults-RocketChatRN/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		50A6A15C33C12A702C5D7432 /* Pods-defaults-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-defaults-NotificationService/Pods-defaults-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		4AB8AB2444F22E005B6CFA78 /* Pods-defaults-ShareRocketChatRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ShareRocketChatRN.debug.xcconfig"; path = "Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN.debug.xcconfig"; sourceTree = "<group>"; };
 		512238A7C0FFBDECB009B225 /* libPods-defaults-Rocket.Chat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-Rocket.Chat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		562653DA068B14E9E707DE63 /* Pods-defaults-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-defaults-NotificationService/Pods-defaults-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		5CF3D2B882386D59C1860632 /* Pods-defaults-RocketChatRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RocketChatRN.release.xcconfig"; path = "Target Support Files/Pods-defaults-RocketChatRN/Pods-defaults-RocketChatRN.release.xcconfig"; sourceTree = "<group>"; };
 		60B2A6A31FC4588700BD58E5 /* RocketChatRN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = RocketChatRN.entitlements; path = RocketChatRN/RocketChatRN.entitlements; sourceTree = "<group>"; };
-		6DB79D72B15CF5F4FF58E661 /* Pods-defaults-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-defaults-NotificationService/Pods-defaults-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
 		7A0D62D1242AB187006D5C06 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A14FCEC257FEB3A005BDCD4 /* Experimental.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Experimental.xcassets; sourceTree = "<group>"; };
 		7A14FCF3257FEB59005BDCD4 /* Official.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Official.xcassets; sourceTree = "<group>"; };
@@ -284,14 +284,14 @@
 		7AAB3E52257E6A6E00707CF6 /* Rocket.Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rocket.Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACD4853222860DE00442C55 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		7AE10C0528A59530003593CB /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttf; sourceTree = "<group>"; };
-		88C94FFF94CEED3642725018 /* Pods-defaults-ShareRocketChatRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ShareRocketChatRN.release.xcconfig"; path = "Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN.release.xcconfig"; sourceTree = "<group>"; };
-		99E7E1A036C0993816456EC8 /* Pods-defaults-RocketChatRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RocketChatRN.debug.xcconfig"; path = "Target Support Files/Pods-defaults-RocketChatRN/Pods-defaults-RocketChatRN.debug.xcconfig"; sourceTree = "<group>"; };
 		A8C24C4BD4B58A39965CD302 /* libPods-defaults-ShareRocketChatRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-defaults-ShareRocketChatRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37C79D9BD0742CE936B6982 /* libc++.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		BA7E862283664608B3894E34 /* libWatermelonDB.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libWatermelonDB.a; sourceTree = "<group>"; };
-		C9B732133AD96F9C93DAAE92 /* Pods-defaults-RocketChatRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RocketChatRN.release.xcconfig"; path = "Target Support Files/Pods-defaults-RocketChatRN/Pods-defaults-RocketChatRN.release.xcconfig"; sourceTree = "<group>"; };
-		F4BF2B56AF0C399334E0AD0B /* Pods-defaults-Rocket.Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-Rocket.Chat.debug.xcconfig"; path = "Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat.debug.xcconfig"; sourceTree = "<group>"; };
-		FAD726E704E4DCF6C9EB71F0 /* Pods-defaults-Rocket.Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-Rocket.Chat.release.xcconfig"; path = "Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat.release.xcconfig"; sourceTree = "<group>"; };
+		CDC98EA32FCAC13904C5B6D4 /* Pods-defaults-RocketChatRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RocketChatRN.debug.xcconfig"; path = "Target Support Files/Pods-defaults-RocketChatRN/Pods-defaults-RocketChatRN.debug.xcconfig"; sourceTree = "<group>"; };
+		CE4AA397C01F492EE396F85B /* Pods-defaults-Rocket.Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-Rocket.Chat.debug.xcconfig"; path = "Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		D138A58FAD914D1F2FC48B67 /* Pods-defaults-Rocket.Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-Rocket.Chat.release.xcconfig"; path = "Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat.release.xcconfig"; sourceTree = "<group>"; };
+		D1D0AC6715EA730B59025505 /* Pods-defaults-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-defaults-NotificationService/Pods-defaults-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		E31D217547245CBE604567C5 /* Pods-defaults-ShareRocketChatRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-ShareRocketChatRN.release.xcconfig"; path = "Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +360,7 @@
 		13B07FAE1A68108700A75B9A /* RocketChatRN */ = {
 			isa = PBXGroup;
 			children = (
+				1876C54628F562E800ADC36B /* GoogleService-Info.plist */,
 				60B2A6A31FC4588700BD58E5 /* RocketChatRN.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				7A92554528777E0100EC3DA3 /* AppDelegate.mm */,
@@ -373,6 +374,21 @@
 				1ED00BB02513E04400A1331F /* ReplyNotification.swift */,
 			);
 			name = RocketChatRN;
+			sourceTree = "<group>";
+		};
+		18427B6E31DA61A864B92834 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				562653DA068B14E9E707DE63 /* Pods-defaults-NotificationService.debug.xcconfig */,
+				D1D0AC6715EA730B59025505 /* Pods-defaults-NotificationService.release.xcconfig */,
+				CE4AA397C01F492EE396F85B /* Pods-defaults-Rocket.Chat.debug.xcconfig */,
+				D138A58FAD914D1F2FC48B67 /* Pods-defaults-Rocket.Chat.release.xcconfig */,
+				CDC98EA32FCAC13904C5B6D4 /* Pods-defaults-RocketChatRN.debug.xcconfig */,
+				5CF3D2B882386D59C1860632 /* Pods-defaults-RocketChatRN.release.xcconfig */,
+				4AB8AB2444F22E005B6CFA78 /* Pods-defaults-ShareRocketChatRN.debug.xcconfig */,
+				E31D217547245CBE604567C5 /* Pods-defaults-ShareRocketChatRN.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		1E068CFB24FD2DAF00A0FFC1 /* AppGroup */ = {
@@ -495,21 +511,6 @@
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
-		7AC2B09613AA7C3FEBAC9F57 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6DB79D72B15CF5F4FF58E661 /* Pods-defaults-NotificationService.debug.xcconfig */,
-				50A6A15C33C12A702C5D7432 /* Pods-defaults-NotificationService.release.xcconfig */,
-				F4BF2B56AF0C399334E0AD0B /* Pods-defaults-Rocket.Chat.debug.xcconfig */,
-				FAD726E704E4DCF6C9EB71F0 /* Pods-defaults-Rocket.Chat.release.xcconfig */,
-				99E7E1A036C0993816456EC8 /* Pods-defaults-RocketChatRN.debug.xcconfig */,
-				C9B732133AD96F9C93DAAE92 /* Pods-defaults-RocketChatRN.release.xcconfig */,
-				254D36979DFB5715FCAB46F7 /* Pods-defaults-ShareRocketChatRN.debug.xcconfig */,
-				88C94FFF94CEED3642725018 /* Pods-defaults-ShareRocketChatRN.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,7 +521,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				18F7B4FB28EF747800EF0D20 /* GoogleService-Info.plist */,
 				1E76CBC425152A7F0067298C /* Shared */,
 				1E068CFB24FD2DAF00A0FFC1 /* AppGroup */,
 				13B07FAE1A68108700A75B9A /* RocketChatRN */,
@@ -531,8 +531,8 @@
 				BB4B591B5FC44CD9986DB2A6 /* Frameworks */,
 				AF5E16F0398347E6A80C8CBE /* Resources */,
 				B8E79A681F3CCC69005B464F /* Recovered References */,
-				7AC2B09613AA7C3FEBAC9F57 /* Pods */,
 				7890E71355E6C0A3288089E7 /* ExpoModulesProviders */,
+				18427B6E31DA61A864B92834 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -651,10 +651,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EC6ACF322CB9FC300A41C61 /* Build configuration list for PBXNativeTarget "ShareRocketChatRN" */;
 			buildPhases = (
+				A26A6128BA2C39CFE9DC1F5C /* [CP] Check Pods Manifest.lock */,
 				1EC6ACAC22CB9FC300A41C61 /* Sources */,
 				1EC6ACAD22CB9FC300A41C61 /* Frameworks */,
 				1EC6ACAE22CB9FC300A41C61 /* Resources */,
 				1EFE4DC322CBF36300B766B7 /* ShellScript */,
+				9A118FDB1347D8117510E3F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -697,6 +699,8 @@
 				7AAB3E48257E6A6E00707CF6 /* Embed App Extensions */,
 				7AAB3E4B257E6A6E00707CF6 /* ShellScript */,
 				7A10288726B1D15200E47EF8 /* Upload source maps to Bugsnag */,
+				FAC52F42F7CE9863FE9BB6D0 /* [CP] Embed Pods Frameworks */,
+				A6D39A6A2E46B3FE10EC2C73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -787,11 +791,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				18F7B4FC28EF747800EF0D20 /* GoogleService-Info.plist in Resources */,
 				7A610CD227ECE38100B8ABDD /* custom.ttf in Resources */,
 				7A14FCED257FEB3A005BDCD4 /* Experimental.xcassets in Resources */,
 				7AE10C0628A59530003593CB /* Inter.ttf in Resources */,
 				7A0D62D2242AB187006D5C06 /* LaunchScreen.storyboard in Resources */,
+				1876C54728F562E800ADC36B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,9 +804,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A610CD327ECE38100B8ABDD /* custom.ttf in Resources */,
+				1876C54828F562E800ADC36B /* GoogleService-Info.plist in Resources */,
 				1EC6ACB722CB9FC300A41C61 /* MainInterface.storyboard in Resources */,
 				7AE10C0728A59530003593CB /* Inter.ttf in Resources */,
-				18F7B4FD28EF747800EF0D20 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,8 +814,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F7B4FE28EF747800EF0D20 /* GoogleService-Info.plist in Resources */,
 				7A610CD427ECE38100B8ABDD /* custom.ttf in Resources */,
+				1876C54928F562E800ADC36B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,11 +824,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A14FCF4257FEB59005BDCD4 /* Official.xcassets in Resources */,
-				18F7B4FF28EF747800EF0D20 /* GoogleService-Info.plist in Resources */,
 				7A610CD527ECE38100B8ABDD /* custom.ttf in Resources */,
 				7AAB3E42257E6A6E00707CF6 /* Images.xcassets in Resources */,
 				7AE10C0828A59530003593CB /* Inter.ttf in Resources */,
 				7AAB3E45257E6A6E00707CF6 /* LaunchScreen.storyboard in Resources */,
+				1876C54A28F562E800ADC36B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1162,6 +1166,140 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9A118FDB1347D8117510E3F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/iosMath/mathFonts.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mathFonts.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-ShareRocketChatRN/Pods-defaults-ShareRocketChatRN-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A26A6128BA2C39CFE9DC1F5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-defaults-ShareRocketChatRN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6D39A6A2E46B3FE10EC2C73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/iosMath/mathFonts.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mathFonts.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E917D2C6EA931052B74B6ED5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1182,6 +1320,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC52F42F7CE9863FE9BB6D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/JitsiMeetSDK/JitsiMeetSDK.framework/JitsiMeetSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/JitsiMeetSDK/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JitsiMeetSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-defaults-Rocket.Chat/Pods-defaults-Rocket.Chat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1341,7 +1503,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99E7E1A036C0993816456EC8 /* Pods-defaults-RocketChatRN.debug.xcconfig */;
+			baseConfigurationReference = CDC98EA32FCAC13904C5B6D4 /* Pods-defaults-RocketChatRN.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -1399,7 +1561,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9B732133AD96F9C93DAAE92 /* Pods-defaults-RocketChatRN.release.xcconfig */;
+			baseConfigurationReference = 5CF3D2B882386D59C1860632 /* Pods-defaults-RocketChatRN.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -1456,7 +1618,7 @@
 		};
 		1EC6ACBC22CB9FC300A41C61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 254D36979DFB5715FCAB46F7 /* Pods-defaults-ShareRocketChatRN.debug.xcconfig */;
+			baseConfigurationReference = 4AB8AB2444F22E005B6CFA78 /* Pods-defaults-ShareRocketChatRN.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1526,7 +1688,7 @@
 		};
 		1EC6ACBD22CB9FC300A41C61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88C94FFF94CEED3642725018 /* Pods-defaults-ShareRocketChatRN.release.xcconfig */;
+			baseConfigurationReference = E31D217547245CBE604567C5 /* Pods-defaults-ShareRocketChatRN.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1595,7 +1757,7 @@
 		};
 		1EFEB59D2493B6640072EDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DB79D72B15CF5F4FF58E661 /* Pods-defaults-NotificationService.debug.xcconfig */;
+			baseConfigurationReference = 562653DA068B14E9E707DE63 /* Pods-defaults-NotificationService.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1638,7 +1800,7 @@
 		};
 		1EFEB59E2493B6640072EDC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50A6A15C33C12A702C5D7432 /* Pods-defaults-NotificationService.release.xcconfig */;
+			baseConfigurationReference = D1D0AC6715EA730B59025505 /* Pods-defaults-NotificationService.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1680,7 +1842,7 @@
 		};
 		7AAB3E50257E6A6E00707CF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4BF2B56AF0C399334E0AD0B /* Pods-defaults-Rocket.Chat.debug.xcconfig */;
+			baseConfigurationReference = CE4AA397C01F492EE396F85B /* Pods-defaults-Rocket.Chat.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -1736,7 +1898,7 @@
 		};
 		7AAB3E51257E6A6E00707CF6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAD726E704E4DCF6C9EB71F0 /* Pods-defaults-Rocket.Chat.release.xcconfig */;
+			baseConfigurationReference = D138A58FAD914D1F2FC48B67 /* Pods-defaults-Rocket.Chat.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;

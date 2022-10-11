@@ -6,7 +6,12 @@
   <item>
     <!-- the app logo, centered horizontally and vertically -->
     <bitmap
-      android:src="@drawable/splash"
-      android:gravity="center" />
+      android:src="@drawable/logo"
+android:gravity="center_horizontal" />
+
+<!--        android:gravity=["top" | "bottom" | "left" | "right" | "center_vertical" |-->
+<!--    "fill_vertical" | "center_horizontal" | "fill_horizontal" |-->
+<!--    "center" | "fill" | "clip_vertical" | "clip_horizontal"]-->
+<!--      android:gravity="center" ]/>-->
   </item>
 </layer-list>

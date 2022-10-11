@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">VOCN</string>
+    <string name="share_extension_name" translatable="false">VOCN</string>
+
+</resources>
