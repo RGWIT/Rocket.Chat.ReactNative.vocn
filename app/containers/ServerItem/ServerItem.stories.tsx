@@ -9,9 +9,9 @@ export default {
 };
 
 const defaultItem = {
-	name: 'Rocket.Chat',
-	id: 'https://open.rocket.chat/',
-	iconURL: 'https://open.rocket.chat/images/logo/android-chrome-512x512.png'
+	name: 'Vocn',
+	id: 'https://connect.vocn.org/',
+	iconURL: 'https://connect.vocn.org/images/logo/android-chrome-512x512.png'
 };
 
 const ServerItem = ({
@@ -31,8 +31,7 @@ const ServerItem = ({
 		value={{
 			theme,
 			colors: themes[theme]
-		}}
-	>
+		}}>
 		<ServerItemComponent item={{ ...defaultItem, ...item }} onPress={onPress} onLongPress={onLongPress} hasCheck={hasCheck} />
 	</ThemeContext.Provider>
 );

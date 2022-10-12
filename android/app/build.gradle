@@ -350,6 +350,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.facebook.fresco:animated-gif:2.0.0'
     implementation project(':@react-native-community_viewpager')
     playImplementation project(':react-native-notifications')
     playImplementation 'com.google.firebase:firebase-core:16.0.0'

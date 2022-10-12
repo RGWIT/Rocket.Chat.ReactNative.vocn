@@ -15,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="${BugsnagAPIKey}" />
         <activity
             android:name="com.zoontek.rnbootsplash.RNBootSplashActivity"
             android:theme="@style/BootTheme"

@@ -1,6 +1,8 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 import sharedStyles from '../Styles';
+
+const Width = Dimensions.get('window').width;
 
 export default StyleSheet.create({
 	serverName: {
@@ -20,5 +22,15 @@ export default StyleSheet.create({
 	},
 	alignItemsCenter: {
 		alignItems: 'center'
+	},
+	imageView: {
+		flex: 1,
+		alignItems: 'center',
+		justifyContent: 'center',
+		backgroundColor: '#38b4d6'
+	},
+	image: {
+		height: 300,
+		width: Width
 	}
 });

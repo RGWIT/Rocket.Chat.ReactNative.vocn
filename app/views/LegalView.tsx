@@ -39,14 +39,14 @@ const LegalView = ({ navigation }: ILegalViewProps): React.ReactElement => {
 					<List.Separator />
 					<List.Item
 						title='Terms_of_Service'
-						onPress={() => onPressItem({ route: 'terms-of-service' })}
+						onPress={() => onPressItem({ route: 'terms' })}
 						testID='legal-terms-button'
 						showActionIndicator
 					/>
 					<List.Separator />
 					<List.Item
 						title='Privacy_Policy'
-						onPress={() => onPressItem({ route: 'privacy-policy' })}
+						onPress={() => onPressItem({ route: 'privacy' })}
 						testID='legal-privacy-button'
 						showActionIndicator
 					/>

@@ -118,8 +118,8 @@ class SettingsView extends React.Component<ISettingsViewProps> {
 
 	sendEmail = async () => {
 		logEvent(events.SE_CONTACT_US);
-		const subject = encodeURI('Rocket.Chat Mobile App Support');
-		const email = encodeURI('support@rocket.chat');
+		const subject = encodeURI('VOCN Mobile App Support');
+		const email = encodeURI('dev@vocn.org');
 		const description = encodeURI(`
 			version: ${getReadableVersion}
 			device: ${getDeviceModel}
@@ -128,7 +128,7 @@ class SettingsView extends React.Component<ISettingsViewProps> {
 			await Linking.openURL(`mailto:${email}?subject=${subject}&body=${description}`);
 		} catch (e) {
 			logEvent(events.SE_CONTACT_US_F);
-			showErrorAlert(I18n.t('error-email-send-failed', { message: 'support@rocket.chat' }));
+			showErrorAlert(I18n.t('error-email-send-failed', { message: 'dev@vocn.org' }));
 		}
 	};
 
