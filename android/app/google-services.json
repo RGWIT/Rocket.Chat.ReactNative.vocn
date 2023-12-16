@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "300601759419",
+    "project_id": "vocn-org",
+    "storage_bucket": "vocn-org.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300601759419:android:48cbc573b458678af7fb9e",
+        "android_client_info": {
+          "package_name": "chat.vocn.org"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300601759419-h91rf7ns0aseht34tt4k4q926bjsvlvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6a7tX4TzKP5TCy1sqSmISbt1SZ0dinyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300601759419-h91rf7ns0aseht34tt4k4q926bjsvlvv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "300601759419-ug2gep4h26jg3amrh6nlfcp587mrb2h5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "chat.vocn.org"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300601759419:android:e8e024e137f1e622f7fb9e",
+        "android_client_info": {
+          "package_name": "com.socar3.be"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300601759419-h91rf7ns0aseht34tt4k4q926bjsvlvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6a7tX4TzKP5TCy1sqSmISbt1SZ0dinyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300601759419-h91rf7ns0aseht34tt4k4q926bjsvlvv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "300601759419-ug2gep4h26jg3amrh6nlfcp587mrb2h5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "chat.vocn.org"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

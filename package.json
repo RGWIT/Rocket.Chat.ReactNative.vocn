@@ -37,7 +37,8 @@
 		]
 	},
 	"dependencies": {
-		"@bugsnag/react-native": "^7.10.5",
+		"@bugsnag/react-native": "7.16.3",
+		"@bugsnag/source-maps": "2.3.1",
 		"@codler/react-native-keyboard-aware-scroll-view": "^2.0.1",
 		"@gorhom/bottom-sheet": "^4.3.1",
 		"@hookform/resolvers": "^2.9.10",
@@ -168,7 +169,6 @@
 		"@babel/plugin-proposal-decorators": "^7.8.3",
 		"@babel/plugin-transform-named-capturing-groups-regex": "^7.17.12",
 		"@babel/runtime": "^7.12.5",
-		"@bugsnag/source-maps": "^2.2.0",
 		"@rocket.chat/eslint-config": "^0.4.0",
 		"@storybook/addon-storyshots": "6.3",
 		"@storybook/react": "6.3",

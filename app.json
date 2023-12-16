@@ -1,6 +1,6 @@
 {
-	"name": "VOCN",
-	"share": "Share VOCN",
+	"name": "RocketChatRN",
+	"share": "ShareRocketChatRN",
 	"displayName": "VOCN",
 	"server": "https://connect.vocn.org",
 	"appGroup": "group.org.vocn.chat",

@@ -1,4 +1,5 @@
 import React from 'react';
+import { View, StyleSheet, Image, Dimensions } from 'react-native';
 import { createStackNavigator, StackNavigationOptions } from '@react-navigation/stack';
 import { connect } from 'react-redux';
 
@@ -16,11 +17,17 @@ import AuthenticationWebView from '../views/AuthenticationWebView';
 import { OutsideModalParamList, OutsideParamList } from './types';
 
 // Outside
+const Width = Dimensions.get('window').width;
 const Outside = createStackNavigator<OutsideParamList>();
-const _OutsideStack = () => {
+const _OutsideStack = (props:any) => {
 	const { theme } = React.useContext(ThemeContext);
-
-	return (
+console.log("///..///..///..",props.connecting )
+	return  props.connecting ? (
+		<View style={styles.imageView}>
+			<Image source={require('../assests/VOCN_loading.gif')} style={styles.image} resizeMode={'cover'} />
+		</View>
+	) : (
+	 
 		<Outside.Navigator screenOptions={{ ...defaultHeader, ...themedHeader(theme), ...StackAnimation } as StackNavigationOptions}>
 			{/* <Outside.Screen name='NewServerView' component={NewServerView} options={NewServerView.navigationOptions} /> */}
 			<Outside.Screen name='WorkspaceView' component={WorkspaceView} />
@@ -35,7 +42,8 @@ const _OutsideStack = () => {
 };
 
 const mapStateToProps = (state: any) => ({
-	root: state.app.root
+	root: state.app.root,
+	connecting: state.server.connecting
 });
 
 const OutsideStack = connect(mapStateToProps)(_OutsideStack);
@@ -54,5 +62,16 @@ const OutsideStackModal = () => {
 		</OutsideModal.Navigator>
 	);
 };
-
+const styles = StyleSheet.create({
+	imageView: {
+		flex: 1,
+		alignItems: 'center',
+		justifyContent: 'center',
+		backgroundColor: '#38b4d6'
+	},
+	image: {
+		height: 300,
+		width: Width
+	}
+});
 export default OutsideStackModal;
