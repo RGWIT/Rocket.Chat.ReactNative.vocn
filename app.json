@@ -1,8 +1,9 @@
 {
-	"name": "RocketChatRN",
-	"share": "ShareRocketChatRN",
-	"displayName": "RocketChatRN",
-	"server": "https://open.rocket.chat",
-	"appGroup": "group.ios.chat.rocket",
-	"appStoreID": "1272915472"
+	"name": "VOCN",
+	"share": "Share VOCN",
+	"displayName": "VOCN",
+	"server": "https://connect.vocn.org",
+	"appGroup": "group.org.vocn.chat",
+	"appStoreID": "1628430389"
 }
+
