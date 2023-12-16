@@ -2,10 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>bugsnag</key>
+	<dict>
+		<key>apiKey</key>
+		<string>266572c0f514cdf4ecc5a7df7a405b69</string>
+	</dict>
 	<key>AppGroup</key>
-	<string>group.ios.chat.rocket</string>
-	<key>IS_OFFICIAL</key>
-	<false/>
+	<string>group.org.vocn.chat</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -21,11 +24,13 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(MARKETING_VERSION)</string>
+	<string>1.0.10</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>9</string>
+	<key>IS_OFFICIAL</key>
+	<false/>
 	<key>KeychainGroup</key>
-	<string>$(AppIdentifierPrefix)chat.rocket.reactnative</string>
+	<string>$(AppIdentifierPrefix)chat.vocn.org</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>

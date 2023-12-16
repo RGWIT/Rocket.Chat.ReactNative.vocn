@@ -19,7 +19,7 @@ describe('test inquiry reduce', () => {
 	const queued: IOmnichannelRoom = {
 		_id: '_id',
 		rid: 'rid',
-		name: 'Rocket Chat',
+		name: 'VOCN',
 		ts: new Date(),
 		message: 'ola',
 		status: 'queued',

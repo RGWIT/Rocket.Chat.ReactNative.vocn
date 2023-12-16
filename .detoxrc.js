@@ -17,13 +17,13 @@ module.exports = {
 	apps: {
 		'ios.debug': {
 			type: 'ios.app',
-			binaryPath: 'ios/build/Build/Products/Debug-iphonesimulator/Rocket.Chat Experimental.app',
+			binaryPath: 'ios/build/Build/Products/Debug-iphonesimulator/VOCN.app',
 			build:
 				'xcodebuild -workspace ios/RocketChatRN.xcworkspace -scheme RocketChatRN -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build'
 		},
 		'ios.release': {
 			type: 'ios.app',
-			binaryPath: 'ios/build/Build/Products/Release-iphonesimulator/Rocket.Chat Experimental.app',
+			binaryPath: 'ios/build/Build/Products/Release-iphonesimulator/VOCN.app',
 			build:
 				'xcodebuild -workspace ios/RocketChatRN.xcworkspace -scheme RocketChatRN -configuration Release -sdk iphonesimulator -derivedDataPath ios/build'
 		},
