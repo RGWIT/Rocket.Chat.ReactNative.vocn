@@ -19,15 +19,13 @@ import { OutsideModalParamList, OutsideParamList } from './types';
 // Outside
 const Width = Dimensions.get('window').width;
 const Outside = createStackNavigator<OutsideParamList>();
-const _OutsideStack = (props:any) => {
+const _OutsideStack = (props: any) => {
 	const { theme } = React.useContext(ThemeContext);
-console.log("///..///..///..",props.connecting )
-	return  props.connecting ? (
+	return props.connecting ? (
 		<View style={styles.imageView}>
-			<Image source={require('../assests/VOCN_loading.gif')} style={styles.image} resizeMode={'cover'} />
+			<Image source={require('../assests/VOCN_loading.gif')} style={styles.image} resizeMode={'contain'} />
 		</View>
 	) : (
-	 
 		<Outside.Navigator screenOptions={{ ...defaultHeader, ...themedHeader(theme), ...StackAnimation } as StackNavigationOptions}>
 			{/* <Outside.Screen name='NewServerView' component={NewServerView} options={NewServerView.navigationOptions} /> */}
 			<Outside.Screen name='WorkspaceView' component={WorkspaceView} />
@@ -67,7 +65,7 @@ const styles = StyleSheet.create({
 		flex: 1,
 		alignItems: 'center',
 		justifyContent: 'center',
-		backgroundColor: '#38b4d6'
+		backgroundColor: '#fff'
 	},
 	image: {
 		height: 300,
