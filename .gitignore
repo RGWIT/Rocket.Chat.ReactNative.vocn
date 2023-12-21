@@ -44,8 +44,8 @@ coverage/
 # BUCK
 buck-out/
 \.buckd/
-*.keystore
-*.jks
+# *.keystore
+# *.jks
 
 # fastlane
 #
