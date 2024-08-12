@@ -93,7 +93,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode VERSIONCODE as Integer
-        versionName "4.50.1"
+        versionName "1.0.4"
         vectorDrawables.useSupportLibrary = true
         if (!isFoss) {
             manifestPlaceholders = [BugsnagAPIKey: BugsnagAPIKey as String]
@@ -185,6 +185,7 @@ android {
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
+    
     implementation("com.facebook.react:react-android")
     implementation("com.facebook.react:flipper-integration")
 
@@ -210,7 +211,8 @@ dependencies {
     androidTestImplementation('com.wix:detox:+')
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.facebook.soloader:soloader:0.10.4'
-    implementation("com.facebook.fresco:animated-gif:2.5.0")
+        implementation 'com.facebook.fresco:fresco:3.1.0'
+    implementation ("com.facebook.fresco:animated-gif:3.1.0")
     implementation "com.facebook.fresco:imagepipeline-okhttp3:3.1.3"
 }
 
