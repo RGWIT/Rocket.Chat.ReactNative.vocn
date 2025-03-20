@@ -10,8 +10,6 @@ PODS:
     - ReactCommon/turbomodule/core
   - Expo (50.0.14):
     - ExpoModulesCore
-  - ExpoAppleAuthentication (6.3.0):
-    - ExpoModulesCore
   - ExpoCamera (14.1.1):
     - ExpoModulesCore
     - ZXingObjC/OneD
@@ -1064,7 +1062,7 @@ PODS:
     - React-Core
   - react-native-restart (0.0.22):
     - React-Core
-  - react-native-safe-area-context (3.2.0):
+  - react-native-safe-area-context (5.3.0):
     - React-Core
   - react-native-simple-crypto (0.6.1):
     - OpenSSL-Universal (= 1.1.1100)
@@ -1343,7 +1341,6 @@ DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXAV (from `../node_modules/expo-av/ios`)
   - Expo (from `../node_modules/expo`)
-  - ExpoAppleAuthentication (from `../node_modules/expo-apple-authentication/ios`)
   - ExpoCamera (from `../node_modules/expo-camera/ios`)
   - ExpoDocumentPicker (from `../node_modules/expo-document-picker/ios`)
   - ExpoFileSystem (from `../node_modules/expo-file-system/ios`)
@@ -1487,8 +1484,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-av/ios"
   Expo:
     :path: "../node_modules/expo"
-  ExpoAppleAuthentication:
-    :path: "../node_modules/expo-apple-authentication/ios"
   ExpoCamera:
     :path: "../node_modules/expo-camera/ios"
   ExpoDocumentPicker:
@@ -1682,7 +1677,6 @@ SPEC CHECKSUMS:
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
   EXAV: 07e50f934907fa8274dd06fbcd20ee4b9478c619
   Expo: e01a77c6fa4bc80a6d1bb949cda1d12d21044abd
-  ExpoAppleAuthentication: 4fc9972356977f009911f2f3a5f56319c2a5b11b
   ExpoCamera: 53f5ef81bab088b2edcf94d05e4da3bc84f46383
   ExpoDocumentPicker: 70254802886e29a45d4ad25486e64b6fc9c8f0cc
   ExpoFileSystem: eecaf6796aed0f4dd20042dc2ca2cac6c4bc1185
@@ -1749,7 +1743,7 @@ SPEC CHECKSUMS:
   react-native-netinfo: bdb108d340cdb41875c9ced535977cac6d2ff321
   react-native-notifications: 4601a5a8db4ced6ae7cfc43b44d35fe437ac50c4
   react-native-restart: 733a51ad137f15b0f8dc34c4082e55af7da00979
-  react-native-safe-area-context: f0906bf8bc9835ac9a9d3f97e8bde2a997d8da79
+  react-native-safe-area-context: f6fd1adb0c0dfb0a528f561c7c6f9297f3391af3
   react-native-simple-crypto: 663609d550ba052dd6ee5eef9954bac274736576
   react-native-slider: 09e5a8b7e766d3b5ae24ec15c5c4ec2679ca0f8c
   react-native-webview: 9f111dfbcfc826084d6c507f569e5e03342ee1c1
@@ -1809,4 +1803,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 23b05e7d7ba785e3452040d94d4b7ab4a920ee60
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.16.2
