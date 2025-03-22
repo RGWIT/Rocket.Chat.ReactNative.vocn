@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { connect } from 'react-redux';
 
@@ -16,13 +17,15 @@ import AuthenticationWebView from '../views/AuthenticationWebView';
 import { OutsideModalParamList, OutsideParamList } from './types';
 
 // Outside
-const Outside = createNativeStackNavigator<OutsideParamList>();
-const _OutsideStack = () => {
-	const { theme } = React.useContext(ThemeContext);
 
+const Outside = createNativeStackNavigator<OutsideParamList>();
+const _OutsideStack = (props: any) => {
+	const { theme } = React.useContext(ThemeContext);
+	console.log('././.', props.connecting);
 	return (
 		<Outside.Navigator screenOptions={{ ...defaultHeader, ...themedHeader(theme) }}>
 			{/* @ts-ignore */}
+
 			{/* <Outside.Screen name='NewServerView' component={NewServerView} options={NewServerView.navigationOptions} /> */}
 			<Outside.Screen name='WorkspaceView' component={WorkspaceView} />
 
@@ -39,7 +42,8 @@ const _OutsideStack = () => {
 };
 
 const mapStateToProps = (state: any) => ({
-	root: state.app.root
+	root: state.app.root,
+	connecting: state.server.connecting
 });
 
 const OutsideStack = connect(mapStateToProps)(_OutsideStack);
@@ -53,6 +57,7 @@ const OutsideStackModal = () => {
 		<OutsideModal.Navigator
 			screenOptions={{ ...defaultHeader, ...themedHeader(theme), presentation: 'containedTransparentModal' }}>
 			<OutsideModal.Screen name='OutsideStack' component={OutsideStack} options={{ headerShown: false }} />
+
 			<OutsideModal.Screen name='AuthenticationWebView' component={AuthenticationWebView} />
 		</OutsideModal.Navigator>
 	);

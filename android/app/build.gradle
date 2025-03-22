@@ -93,7 +93,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode VERSIONCODE as Integer
-        versionName "4.57.2"
+        versionName "1.0.5"
         vectorDrawables.useSupportLibrary = true
         if (!isFoss) {
             manifestPlaceholders = [BugsnagAPIKey: BugsnagAPIKey as String]
@@ -194,7 +194,8 @@ dependencies {
     } else {
         implementation jscFlavor
     }
-
+ implementation 'com.facebook.fresco:animated-gif:2.6.0'
+    implementation 'com.facebook.fresco:fresco:2.0.0'
     implementation project(':@react-native-community_viewpager')
     playImplementation project(':react-native-notifications')
     playImplementation "com.google.firebase:firebase-messaging:23.3.1"

@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from 'react';
-import { Text, View } from 'react-native';
+import { Dimensions, Image, Text, StyleSheet, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { CompositeNavigationProp } from '@react-navigation/core';
@@ -16,6 +16,7 @@ import ServerAvatar from './ServerAvatar';
 import styles from './styles';
 import { useAppSelector } from '../../lib/hooks';
 import RegisterDisabledComponent from './RegisterDisabledComponent';
+const Width = Dimensions.get('window').width;
 
 type TNavigation = CompositeNavigationProp<
 	NativeStackNavigationProp<OutsideParamList, 'WorkspaceView'>,
@@ -62,7 +63,6 @@ const WorkspaceView = () => {
 		!Accounts_iframe_enabled &&
 		(registrationForm === 'Public' || (registrationForm === 'Secret URL' && inviteLinkToken?.length))
 	);
-
 	const login = () => {
 		if (Accounts_iframe_enabled) {
 			navigation.navigate('AuthenticationWebView', { url: server, authType: 'iframe' });
@@ -75,7 +75,7 @@ const WorkspaceView = () => {
 		navigation.navigate('RegisterView', { title: workspaceDomain });
 	};
 
-	return (
+	return server ? (
 		<FormContainer testID='workspace-view'>
 			<FormContainerInner>
 				<View style={styles.alignItemsCenter}>
@@ -91,7 +91,22 @@ const WorkspaceView = () => {
 				)}
 			</FormContainerInner>
 		</FormContainer>
+	) : (
+		<View style={style.imageView}>
+			<Image source={require('../../assests/VOCN_loading.gif')} style={style.image} resizeMode={'contain'} />
+		</View>
 	);
 };
-
+const style = StyleSheet.create({
+	imageView: {
+		flex: 1,
+		alignItems: 'center',
+		justifyContent: 'center',
+		backgroundColor: '#fff'
+	},
+	image: {
+		height: 300,
+		width: Width
+	}
+});
 export default WorkspaceView;

@@ -60,12 +60,27 @@ pre_install do |installer|
 end
 
 post_install do |installer|
-  # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
-  react_native_post_install(
-    installer,
-    # config[:reactNativePath],
-    # :mac_catalyst_enabled => false
-  )
+  react_native_post_install(installer)
+
+  def strip_bitcode_from_framework(bitcode_strip_path, framework_relative_path)
+    framework_path = File.join(bitcode_strip_path, framework_relative_path)
+    if File.exist?(framework_path)
+      puts "Stripping bitcode from: #{framework_path}"
+      system("xcrun bitcode_strip #{framework_path} -r -o #{framework_path}")
+    else
+      puts "Framework not found at path: #{framework_path}"
+    end
+  end
+
+  bitcode_strip_path = "#{Pod::Config.instance.installation_root}/Pods"
+
+  framework_paths = [
+    "OpenSSL-Universal/Frameworks/OpenSSL.xcframework/ios-arm64_armv7/OpenSSL.framework/OpenSSL"
+  ]
+
+  framework_paths.each do |framework_relative_path|
+    strip_bitcode_from_framework(bitcode_strip_path, framework_relative_path)
+  end
 
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
@@ -82,3 +97,4 @@ post_install do |installer|
     end
   end
 end
+
