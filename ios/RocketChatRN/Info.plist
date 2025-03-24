@@ -61,6 +61,11 @@
 		<false/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
+		<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Take photos to share with other users</string>

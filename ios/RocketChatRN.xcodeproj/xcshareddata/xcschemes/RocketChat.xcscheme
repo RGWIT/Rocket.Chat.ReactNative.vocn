@@ -14,16 +14,16 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7AAB3E0D257E6A6E00707CF6"
-               BuildableName = "Rocket.Chat.app"
-               BlueprintName = "Rocket.Chat"
+               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+               BuildableName = "Rocket.Chat Experimental.app"
+               BlueprintName = "RocketChatRN"
                ReferencedContainer = "container:RocketChatRN.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -31,7 +31,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7AAB3E0D257E6A6E00707CF6"
-            BuildableName = "Rocket.Chat.app"
-            BlueprintName = "Rocket.Chat"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "Rocket.Chat Experimental.app"
+            BlueprintName = "RocketChatRN"
             ReferencedContainer = "container:RocketChatRN.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7AAB3E0D257E6A6E00707CF6"
-            BuildableName = "Rocket.Chat.app"
-            BlueprintName = "Rocket.Chat"
+            BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+            BuildableName = "Rocket.Chat Experimental.app"
+            BlueprintName = "RocketChatRN"
             ReferencedContainer = "container:RocketChatRN.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -73,6 +73,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "vocn"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
