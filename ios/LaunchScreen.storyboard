@@ -40,6 +40,7 @@
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="splashBackgroundColor"/>
     <resources>
         <image name="Launch Screen Icon" width="125" height="125"/>
         <namedColor name="splashBackgroundColor">
