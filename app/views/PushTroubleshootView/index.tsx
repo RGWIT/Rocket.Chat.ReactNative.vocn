@@ -40,7 +40,7 @@ const PushTroubleshootView = ({ navigation }: IPushTroubleshootViewProps): JSX.E
 				<DeviceNotificationSettings />
 				{/* <CommunityEditionPushQuota /> */}
 				<PushGatewayConnection />
-				<NotificationDelay />
+				{/* <NotificationDelay /> */}
 			</List.Container>
 		</SafeAreaView>
 	);

@@ -243,13 +243,13 @@ const SettingsView = (): React.ReactElement => {
 				</List.Section>
 
 				<List.Section>
-					<List.Item
+					{/* <List.Item
 						title='Get_help'
 						left={() => <List.Icon name='support' />}
 						showActionIndicator
 						onPress={() => navigateToScreen('GetHelpView')}
 						testID='settings-view-get-help'
-					/>
+					/> */}
 					<List.Separator />
 					<List.Item
 						title='Share_this_app'
