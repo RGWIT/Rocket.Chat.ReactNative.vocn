@@ -31,7 +31,6 @@
   [RNBootSplash initWithStoryboard:@"LaunchScreen" rootView:self.window.rootViewController.view];
   [[[SSLPinning alloc] init] migrate];
   
-  self.watchConnection = [[WatchConnection alloc] initWithSession:[WCSession defaultSession]];
 
   return YES;
 }
