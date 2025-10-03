@@ -1,4 +1,7 @@
 {
 	"name": "RocketChatRN",
-	"server": "https://open.rocket.chat"
+	"displayName": "VOCN",
+	"server": "https://connect.vocn.org",
+	"appGroup": "group.org.vocn.chat",
+	"appStoreID": "1628430389"
 }
