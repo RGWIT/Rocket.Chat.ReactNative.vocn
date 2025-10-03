@@ -4,7 +4,6 @@ import ReactAppDependencyProvider
 import Firebase
 import Bugsnag
 import MMKV
-import WatchConnectivity
 
 @UIApplicationMain
 public class AppDelegate: ExpoAppDelegate {
@@ -12,7 +11,7 @@ public class AppDelegate: ExpoAppDelegate {
 
   var reactNativeDelegate: ReactNativeDelegate?
   var reactNativeFactory: RCTReactNativeFactory?
-  var watchConnection: WatchConnection?
+
 
   public override func application(
     _ application: UIApplication,
@@ -56,10 +55,6 @@ public class AppDelegate: ExpoAppDelegate {
 
     // Initialize SSL Pinning
      SSLPinning().migrate()
-
-    // Initialize Watch Connection
-    watchConnection = WatchConnection(session: WCSession.default)
-
     return result
   }
 

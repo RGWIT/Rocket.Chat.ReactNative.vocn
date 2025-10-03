@@ -21,7 +21,7 @@ describe('test supportedVersions reducer', () => {
 		};
 		const i18n = {
 			en: {
-				title: '{{workspace-name}} is running an unsupported version of Rocket.Chat',
+				title: '{{workspace-name}} is running an unsupported version of VOCN',
 				subtitle: 'Mobile and desktop app access to {{workspace-name}} will be cut off in XX days.',
 				description:
 					'An automatic 30-day warning period has been applied to allow time for a workspace admin to update workspace to a supported software version.'
