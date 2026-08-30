@@ -42,7 +42,7 @@ const ForgotPasswordView = ({ route }: ForgotPasswordViewProps): ReactElement =>
 
 	useLayoutEffect(() => {
 		navigation.setOptions({
-			title: params?.title ?? 'Rocket.Chat'
+			title: params?.title ?? 'VOCN'
 		});
 	}, [navigation, params?.title]);
 

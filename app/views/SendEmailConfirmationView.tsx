@@ -49,7 +49,7 @@ const SendEmailConfirmationView = ({ route }: SendEmailConfirmationViewProps) =>
 
 	useEffect(() => {
 		navigation.setOptions({
-			title: 'Rocket.Chat'
+			title: 'VOCN'
 		});
 		if (route.params?.user) {
 			validate(route.params.user);

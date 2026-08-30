@@ -160,7 +160,7 @@ const AttachmentView = (): ReactElement => {
 		setLoading(true);
 		try {
 			if (LOCAL_DOCUMENT_DIRECTORY && url.startsWith(LOCAL_DOCUMENT_DIRECTORY)) {
-				await CameraRoll.save(url, { album: 'Rocket.Chat' });
+				await CameraRoll.save(url, { album: 'VOCN' });
 			} else {
 				const mediaAttachment = formatAttachmentUrl(url, user.id, user.token, baseUrl);
 				let filename = '';
@@ -170,7 +170,7 @@ const AttachmentView = (): ReactElement => {
 					filename = getFilename({ title: attachment.title, type: 'video', mimeType: video_type, url });
 				}
 				const file = await fileDownload(mediaAttachment, {}, filename);
-				await CameraRoll.save(file, { album: 'Rocket.Chat' });
+				await CameraRoll.save(file, { album: 'VOCN' });
 				FileSystem.deleteAsync(file, { idempotent: true });
 			}
 			EventEmitter.emit(LISTENER, { message: I18n.t('saved_to_gallery') });

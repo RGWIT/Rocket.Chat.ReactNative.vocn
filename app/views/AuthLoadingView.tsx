@@ -1,20 +1,24 @@
 import { memo, type ReactElement } from 'react';
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 import I18n from '../i18n';
 import { useTheme } from '../theme';
 import sharedStyles from './Styles';
 import { useAppSelector } from '../lib/hooks/useAppSelector';
+import VocnLoading from '../containers/VocnLoading';
 
 const styles = StyleSheet.create({
 	container: {
-		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center'
+		flex: 1
+	},
+	textWrap: {
+		...StyleSheet.absoluteFillObject,
+		justifyContent: 'flex-end',
+		alignItems: 'center',
+		paddingBottom: 80
 	},
 	text: {
 		fontSize: 16,
-		paddingTop: 10,
 		...sharedStyles.textRegular,
 		...sharedStyles.textAlignCenter
 	}
@@ -24,12 +28,12 @@ const AuthLoadingView = memo((): ReactElement => {
 	const text = useAppSelector(state => state.app.text);
 	const { colors } = useTheme();
 	return (
-		<View style={[styles.container, { backgroundColor: colors.surfaceRoom }]}>
+		<View style={styles.container}>
+			<VocnLoading />
 			{text ? (
-				<>
-					<ActivityIndicator color={colors.fontSecondaryInfo} size='large' />
+				<View style={styles.textWrap} pointerEvents='none'>
 					<Text style={[styles.text, { color: colors.fontDefault }]}>{`${text}\n${I18n.t('Please_wait')}`}</Text>
-				</>
+				</View>
 			) : null}
 		</View>
 	);

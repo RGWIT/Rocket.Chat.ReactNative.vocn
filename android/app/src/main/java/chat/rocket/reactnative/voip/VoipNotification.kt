@@ -10,6 +10,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.media.AudioAttributes
 import android.media.AudioManager
 import android.media.RingtoneManager
@@ -931,6 +932,12 @@ class VoipNotification(private val context: Context) {
         // Get icons
         val packageName = context.packageName
         val smallIconResId = context.resources.getIdentifier("ic_notification", "drawable", packageName)
+        val largeIconResId = context.resources.getIdentifier("ic_notification_large", "drawable", packageName)
+        val fallbackLargeIcon = if (largeIconResId != 0) {
+            BitmapFactory.decodeResource(context.resources, largeIconResId)
+        } else {
+            null
+        }
 
         // Avatar not available in VoipPayload format (would require caller username)
         val avatarBitmap: Bitmap? = null
@@ -950,8 +957,9 @@ class VoipNotification(private val context: Context) {
             addAction(0, context.getString(R.string.incoming_call_reject), declinePendingIntent)
             addAction(0, context.getString(R.string.incoming_call_accept), acceptPendingIntent)
 
-            if (avatarBitmap != null) {
-                setLargeIcon(avatarBitmap)
+            when {
+                avatarBitmap != null -> setLargeIcon(avatarBitmap)
+                fallbackLargeIcon != null -> setLargeIcon(fallbackLargeIcon)
             }
 
             // Set full-screen intent only if permission is granted

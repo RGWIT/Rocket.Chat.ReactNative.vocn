@@ -34,19 +34,19 @@ const UGCRules = ({ styleContainer }: { styleContainer?: ViewStyle }) => {
 		if (!server) {
 			return;
 		}
-		openLink(`${server}/${route}`, theme);
+		openLink(`${'https://www.vocn.org'}/${route}`, theme);
 	};
 	return (
 		<View style={[styles.bottomContainer, styleContainer]}>
 			<Text style={[styles.bottomContainerText, { color: colors.fontSecondaryInfo }]}>{I18n.t('Onboarding_agree_terms')}</Text>
 			<Text
 				style={[styles.bottomContainerTextUnderline, styles.bottomContainerText, { color: colors.fontInfo }]}
-				onPress={() => openContract('terms-of-service')}>
+				onPress={() => openContract('terms')}>
 				{I18n.t('Terms_of_Service')}
 			</Text>
 			<Text
 				style={[styles.bottomContainerTextUnderline, styles.bottomContainerText, { color: colors.fontInfo }]}
-				onPress={() => openContract('privacy-policy')}>
+				onPress={() => openContract('privacy')}>
 				{I18n.t('Privacy_Policy')}
 			</Text>
 		</View>

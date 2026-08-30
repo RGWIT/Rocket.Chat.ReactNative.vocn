@@ -4,6 +4,8 @@ import { type StaticParamList } from '@react-navigation/native';
 
 import { ThemeContext } from '../theme';
 import { defaultHeader, themedHeader } from '../lib/methods/helpers/navigation';
+import { useAppSelector } from '../lib/hooks/useAppSelector';
+import VocnLoading from '../containers/VocnLoading';
 import WorkspaceView from '../views/WorkspaceView';
 import LoginView from '../views/LoginView';
 import ForgotPasswordView from '../views/ForgotPasswordView';
@@ -25,6 +27,12 @@ const Outside = createNativeStackNavigator({
 	'use memo';
 
 	const { theme } = useContext(ThemeContext);
+	const connecting = useAppSelector(state => state.server.connecting);
+
+	if (connecting) {
+		return <VocnLoading />;
+	}
+
 	return <Navigator screenOptions={themedHeader(theme)} />;
 });
 

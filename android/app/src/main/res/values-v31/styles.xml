@@ -1,0 +1,15 @@
+<resources>
+	<!-- Android 12+ shows a circular system splash first. Use a blank white
+	     icon so it matches BootSplash and we don't show a cropped logo. -->
+	<style name="BootTheme" parent="Theme.BootSplash">
+		<item name="bootSplashBackground">@color/splashBackground</item>
+		<item name="bootSplashLogo">@drawable/bootsplash_logo</item>
+		<item name="postBootSplashTheme">@style/AppTheme</item>
+		<item name="android:statusBarColor">@android:color/transparent</item>
+		<item name="android:navigationBarColor">@android:color/transparent</item>
+		<item name="android:enforceNavigationBarContrast">false</item>
+		<item name="android:windowSplashScreenBackground">@color/splashBackground</item>
+		<item name="android:windowSplashScreenAnimatedIcon">@drawable/empty_splash_icon</item>
+		<item name="android:windowSplashScreenIconBackgroundColor">@color/splashBackground</item>
+	</style>
+</resources>

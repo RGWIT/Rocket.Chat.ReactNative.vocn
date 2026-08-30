@@ -9,6 +9,7 @@ import android.content.Intent
 import android.media.AudioAttributes
 import android.media.RingtoneManager
 import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -155,6 +156,12 @@ class VideoConfNotification(private val context: Context) {
         // Get icons
         val packageName = context.packageName
         val smallIconResId = context.resources.getIdentifier("ic_notification", "drawable", packageName)
+        val largeIconResId = context.resources.getIdentifier("ic_notification_large", "drawable", packageName)
+        val fallbackLargeIcon = if (largeIconResId != 0) {
+            BitmapFactory.decodeResource(context.resources, largeIconResId)
+        } else {
+            null
+        }
 
         // Fetch caller avatar
         val avatarUri = ejson.getCallerAvatarUri()
@@ -179,9 +186,9 @@ class VideoConfNotification(private val context: Context) {
             addAction(0, "Decline", declinePendingIntent)
             addAction(0, "Accept", acceptPendingIntent)
             
-            // Set large icon (avatar) if available
-            if (avatarBitmap != null) {
-                setLargeIcon(avatarBitmap)
+            when {
+                avatarBitmap != null -> setLargeIcon(avatarBitmap)
+                fallbackLargeIcon != null -> setLargeIcon(fallbackLargeIcon)
             }
         }
 

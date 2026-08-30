@@ -215,7 +215,7 @@ const handleSelectServer = function* handleSelectServer({ server, version, fetch
 
 		// we'll set serverVersion as metadata for bugsnag
 		logServerVersion(serverVersion);
-		yield put(selectServerSuccess({ server, version: serverVersion, name: serverInfo?.name || 'Rocket.Chat' }));
+		yield put(selectServerSuccess({ server, version: serverVersion, name: serverInfo?.name || 'VOCN' }));
 	} catch (e) {
 		yield put(selectServerFailure());
 		log(e);

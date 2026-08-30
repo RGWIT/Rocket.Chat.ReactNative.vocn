@@ -49,6 +49,9 @@
         android:usesCleartextTraffic="${usesCleartextTraffic}"
         android:hardwareAccelerated="true"
         tools:replace="android:allowBackup">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
         <activity
             android:name="chat.rocket.reactnative.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"

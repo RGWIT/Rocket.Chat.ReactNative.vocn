@@ -12,6 +12,7 @@ import InsideStack from './stacks/InsideStack';
 import MasterDetailStack from './stacks/MasterDetailStack';
 import ShareExtensionStack from './stacks/ShareExtensionStack';
 import AuthLoadingView from './views/AuthLoadingView';
+import VocnLoading from './containers/VocnLoading';
 import SetUsernameView from './views/SetUsernameView';
 import { ThemeContext } from './theme';
 import { setCurrentScreen } from './lib/methods/helpers/log';
@@ -79,7 +80,7 @@ const AppContainer = () => {
 	}, [root]);
 
 	if (!root) {
-		return null;
+		return <VocnLoading />;
 	}
 
 	return (

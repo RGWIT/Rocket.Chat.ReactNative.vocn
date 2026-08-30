@@ -36,7 +36,7 @@ if (process.env.USE_STORYBOOK) {
 				// Required to get audio in background when using Android 11
 				foregroundService: {
 					channelId: 'chat.rocket.reactnative',
-					channelName: 'Rocket.Chat',
+					channelName: 'VOCN',
 					notificationTitle: 'Voice call is running on background'
 				},
 				selfManaged: true

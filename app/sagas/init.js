@@ -6,7 +6,7 @@ import { CURRENT_SERVER, TOKEN_KEY } from '../lib/constants/keys';
 import UserPreferences from '../lib/methods/userPreferences';
 import { selectServerRequest, serverRequest } from '../actions/server';
 import { setAllPreferences } from '../actions/sortPreferences';
-import { APP } from '../actions/actionsTypes';
+import { APP, SERVER } from '../actions/actionsTypes';
 import log from '../lib/methods/helpers/log';
 import database from '../lib/database';
 import { localAuthenticate } from '../lib/methods/helpers/localAuthentication';
@@ -74,17 +74,30 @@ const restore = function* restore() {
 	}
 };
 
-const start = function* start() {
+const hideBootSplash = function* hideBootSplash() {
 	const currentRoot = yield select(state => state.app.root);
-
 	if (currentRoot !== RootEnum.ROOT_LOADING_SHARE_EXTENSION) {
 		yield RNBootSplash.hide({ fade: true });
 	}
+};
+
+const start = function* start() {
+	const connecting = yield select(state => state.server.connecting);
+	// Keep the native splash up while the single server is still loading
+	// so we don't flash a second (cropped) splash or a white screen.
+	if (connecting) {
+		return;
+	}
+	yield hideBootSplash();
 };
 
 const root = function* root() {
 	yield takeLatest(APP.INIT, restore);
 	yield takeLatest(APP.START, start);
 	yield takeLatest(APP.INIT_LOCAL_SETTINGS, initLocalSettings);
+	yield takeLatest(
+		[SERVER.SELECT_SUCCESS, SERVER.SELECT_FAILURE, SERVER.SELECT_CANCEL, SERVER.FAILURE],
+		hideBootSplash
+	);
 };
 export default root;

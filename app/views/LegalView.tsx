@@ -27,7 +27,7 @@ const LegalView = () => {
 		if (!server) {
 			return;
 		}
-		openLink(`${server}/${route}`, theme);
+		openLink(`${'https://www.vocn.org'}/${route}`, theme);
 	};
 
 	return (
@@ -37,7 +37,7 @@ const LegalView = () => {
 					<List.Separator />
 					<List.Item
 						title='Terms_of_Service'
-						onPress={() => onPressItem({ route: 'terms-of-service' })}
+						onPress={() => onPressItem({ route: 'terms' })}
 						testID='legal-terms-button'
 						right={() => <NewWindowIcon />}
 						accessibilityRole='link'
@@ -45,7 +45,7 @@ const LegalView = () => {
 					<List.Separator />
 					<List.Item
 						title='Privacy_Policy'
-						onPress={() => onPressItem({ route: 'privacy-policy' })}
+						onPress={() => onPressItem({ route: 'privacy' })}
 						testID='legal-privacy-button'
 						right={() => <NewWindowIcon />}
 						accessibilityRole='link'

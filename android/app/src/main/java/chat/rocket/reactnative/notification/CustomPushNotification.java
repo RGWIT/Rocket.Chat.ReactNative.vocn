@@ -411,7 +411,7 @@ public class CustomPushNotification {
     private Bitmap largeIcon() {
         final Resources res = mContext.getResources();
         String packageName = mContext.getPackageName();
-        int largeIconResId = res.getIdentifier("ic_notification", "drawable", packageName);
+        int largeIconResId = res.getIdentifier("ic_notification_large", "drawable", packageName);
         return BitmapFactory.decodeResource(res, largeIconResId);
     }
 
@@ -423,13 +423,16 @@ public class CustomPushNotification {
 
         notification.setSmallIcon(smallIconResId);
 
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
-            String avatarUri = ejson != null ? ejson.getAvatarUri() : null;
-            if (avatarUri != null) {
-                Bitmap avatar = getAvatar(avatarUri, ejson);
-                if (avatar != null) {
-                    notification.setLargeIcon(avatar);
-                }
+        Bitmap fallbackLargeIcon = largeIcon();
+        if (fallbackLargeIcon != null) {
+            notification.setLargeIcon(fallbackLargeIcon);
+        }
+
+        String avatarUri = ejson != null ? ejson.getAvatarUri() : null;
+        if (avatarUri != null) {
+            Bitmap avatar = getAvatar(avatarUri, ejson);
+            if (avatar != null) {
+                notification.setLargeIcon(avatar);
             }
         }
     }
